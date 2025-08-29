@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RJCouriers - Alternate Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RJCouriers</h1>
+    <nav>
+      <a href="#booking">Booking</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Schedule a Delivery</h2>
+    <form id="bookingForm">
+      <div class="input-group">
+        <input type="text" id="sender" required>
+        <label for="sender">Sender Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="phone" required>
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="receiver" required>
+        <label for="receiver">Receiver Address</label>
+      </div>
+      <div class="input-group">
+        <input type="number" id="distance" required>
+        <label for="distance">Distance (km)</label>
+      </div>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="bookingResult"></p>
+  </section>
+
+  <!-- Tracking Section -->
+  <section id="tracking">
+    <h2>Track Your Package</h2>
+    <form id="trackingForm">
+      <div class="input-group">
+        <input type="text" id="trackingId" required>
+        <label for="trackingId">Enter Tracking ID</label>
+      </div>
+      <button type="submit">Track</button>
+    </form>
+    <div id="trackingResult"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">Same Day Delivery</div>
+      <div class="service-card">Express Shipping</div>
+      <div class="service-card">International Courier</div>
+      <div class="service-card">Cash on Delivery</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name">Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email">Your Email</label>
+      </div>
+      <div class="input-group">
+        <textarea id="message" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RJCouriers. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
